@@ -13,7 +13,7 @@ function frameIt () {
 }
 
 function pressIt () {
-  $('form input').on('keydown', function (key) {
+  $('form:first-child').on('keydown', function (key) {
     if (key.which == 47) {
       alert('g was pressed');
       
