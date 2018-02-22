@@ -14,7 +14,10 @@ function frameIt () {
 
 function pressIt () {
   $('form:last-child').on('keydown', function (key) {
-    if (key.which == '')
+    if (key.which == '47') {
+      alert('You have pressed the "g" key!');
+      return;
+    }
   })
 }
 
