@@ -13,9 +13,9 @@ function frameIt () {
 }
 
 function pressIt () {
-  $('form:last-child').on('keydown', function (key) {
+  $('form').on('keydown', function (key) {
     if (key.which == 47) {
-      alert('You have pressed the "g" key!');
+      alert('g was pressed');
       return;
     }
   })
